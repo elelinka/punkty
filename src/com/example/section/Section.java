@@ -4,7 +4,15 @@ import com.example.point.Point;
 
 public class Section {
 
-    public double sectionLenght(Point pointA, Point pointB) {
+    Point pointA;
+    Point pointB;
+
+    public Section(Point pointA, Point pointB) {
+        this.pointA = pointA;
+        this.pointB = pointB;
+    }
+
+    public double sectionLenght() {
         double x = pointB.getPositionX() - pointA.getPositionX();
         double y = pointB.getPositionY() - pointA.getPositionY();
 

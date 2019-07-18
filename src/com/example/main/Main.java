@@ -27,17 +27,17 @@ public class Main {
         System.out.println();
 
         Point pointB = new Point(5, 1);
-        Section sectionAB = new Section();
-        double sectionABlenght = sectionAB.sectionLenght(pointA, pointB);
+        Section sectionAB = new Section(pointA, pointB);
+        double sectionABlenght = sectionAB.sectionLenght();
         System.out.println("dlugosc odcinka AB: " + sectionABlenght);
 
         Point pointC = new Point(-3, 2);
-        Section sectionAC = new Section();
-        double sectionAClenght = sectionAC.sectionLenght(pointA, pointC);
+        Section sectionAC = new Section(pointA, pointC);
+        double sectionAClenght = sectionAC.sectionLenght();
         System.out.println("dlugosc odcinka AC: " + sectionAClenght);
 
-        Section sectionBC = new Section();
-        double sectionBClenght = sectionBC.sectionLenght(pointB, pointC);
+        Section sectionBC = new Section(pointB, pointC);
+        double sectionBClenght = sectionBC.sectionLenght();
         System.out.println("dlugosc odcinka BC: " + sectionBClenght);
 
         System.out.println();
