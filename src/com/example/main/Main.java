@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Point pointA = new Point(3, 2);
+        Point pointA = new Point(1, 0);
         boolean isFirst = pointA.isFirstQuarter();
         System.out.println("czy jest w pierwszej cwiartce? " + isFirst);
         boolean isSecond = pointA.isSecondQuarter();
@@ -17,6 +17,12 @@ public class Main {
         System.out.println("czy jest w trzeciej cwiartce? " + isThird);
         boolean isFourth = pointA.isFourthQuarter();
         System.out.println("czy jest w czwartej cwiartce? " + isFourth);
+        boolean isMiddle = pointA.isInTheMiddle();
+        System.out.println("czy lezy na srodku osi? " + isMiddle);
+        boolean isOnX = pointA.isOnXaxis();
+        System.out.println("czy lezy na osi x? " + isOnX);
+        boolean isOnY = pointA.isOnYaxis();
+        System.out.println("czy lezy na osi y? " + isOnY);
 
         System.out.println();
 
