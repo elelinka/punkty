@@ -43,10 +43,10 @@ public class Point {
     }
 
     public boolean isOnXaxis() {
-        return (positionX > 0 || positionX < 0) && positionY == 0;
+        return positionY == 0;
     }
     public boolean isOnYaxis() {
-        return (positionY > 0 || positionY < 0) && positionX == 0;
+        return positionX == 0;
     }
 
     public boolean isInTheMiddle() {
